@@ -1,5 +1,6 @@
 import React from 'react'
 import bgImage from '../assets/bg.jpg'
+import { toast } from 'react-toastify'
 import { useState,useEffect,use } from 'react'
 import { useParams } from 'react-router'
 import { getWeather } from '../services/WeatherServices'
@@ -16,19 +17,22 @@ function Weather() {
             setWeatherData(data)
         }
         fetchData()
-    })
+     
+
+    }
+)
   return (
     <div style={{
         backgroundImage:`url(${bgImage})`,
         backgroundSize:'cover',
+        opacity:'0.7'
     }}
     className='p-10 h-screen flex justify-center '
     >
-        {
-            loading && <h1 className='text-3xl font-bold'>Loading Weather...</h1>
+        {loading && 
+            <h1 className='text-3xl font-bold text-white'>Loading Weather...</h1> 
         }
-       { weatherData && (
-            <div className='flex flex-col gap-4 justify-center items-center '>
+       { weatherData && (<div className='flex flex-col gap-4 justify-center items-center '>
                 <img src={weatherData.current.condition.icon} 
                 className='opacity:1'/>
                 <h1 className='text-2xl font-bold'>{
@@ -79,11 +83,12 @@ function Weather() {
                             weatherData.current.temp_f
                         }</span>
                     </h1>
+                    
             </div>
         )}
 
     </div>
   )
 }
-
+toast.success("data fetched successfully")
 export default Weather
