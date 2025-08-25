@@ -24,10 +24,10 @@ function Weather() {
     <div style={{
         backgroundImage:`url(${bgImage})`,
         backgroundSize:'cover',
-        opacity:'0.7'
     }}
-    className='p-10 h-screen flex justify-center '
+    className='p-10 h-screen relative flex justify-center bg-opacity-40 '
     >
+       <div className='absolute z-0'></div>
         {loading && 
             <h1 className='text-3xl font-bold text-white'>Loading Weather...</h1> 
         }
