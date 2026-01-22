@@ -27,7 +27,7 @@ function AppContent() {
               <Link to='/' className={`text-lg sm:text-2xl font-bold transition-colors ${
                 isDark ? 'text-white hover:text-gray-100' : 'text-white hover:text-gray-200'
               }`}>
-                🌞 WeatherForcast
+                🌞 WeatherX
               </Link>
               <ul className='flex gap-4 sm:gap-8 items-center'>
                 <li>
