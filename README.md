@@ -1,12 +1,49 @@
-# React + Vite
+# 🌦️ Weather Forecast Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![API](https://img.shields.io/badge/Weather-API-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-Currently, two official plugins are available:
+A responsive web application that displays real-time weather data using third-party API integration and dynamic UI rendering.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔍 Project Overview
+The Weather Forecast Website provides current weather conditions for any city using live API data. The application focuses on performance, responsiveness, and clean user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Key Features
+- Real-time weather updates
+- City-based search functionality
+- Displays temperature, humidity, and conditions
+- Responsive design for all screen sizes
+
+---
+
+## 🛠 Tech Stack
+- **Frontend:** React.js, HTML5, CSS3, JavaScript  
+- **API:** OpenWeather API  
+- **Tools:** Git, GitHub  
+
+---
+
+## ⚙️ Application Flow
+- Fetches real-time data from weather API
+- Processes and displays dynamic results
+- Handles asynchronous operations efficiently
+
+---
+
+## 🎯 Skills Demonstrated
+- API integration
+- Asynchronous JavaScript
+- Frontend performance optimization
+- Responsive UI development
+
+---
+
+## 📌 Future Enhancements
+- 7-day forecast
+- Auto-location detection
+- Dark mode support
